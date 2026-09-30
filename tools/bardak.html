@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- Markasız bardak su illüstrasyonu (1200x900). Bardak ve pet suda marka değişken olduğu için fotoğraf yerine kullanılır. -->
+<html><body style="margin:0">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8f4fc"/><stop offset="1" stop-color="#cfe6f6"/></linearGradient>
+<radialGradient id="isik" cx=".3" cy=".25" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<linearGradient id="su" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe6fb" stop-opacity=".9"/><stop offset="1" stop-color="#5fb6ea" stop-opacity=".95"/></linearGradient>
+<linearGradient id="cam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset=".3" stop-color="#ffffff" stop-opacity=".15"/><stop offset=".7" stop-color="#ffffff" stop-opacity=".05"/><stop offset="1" stop-color="#ffffff" stop-opacity=".45"/></linearGradient>
+<linearGradient id="kapak" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2bb3e6"/><stop offset="1" stop-color="#0a5ea8"/></linearGradient>
+<linearGradient id="koli" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3c08f"/><stop offset="1" stop-color="#c99a5e"/></linearGradient>
+<filter id="golge" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
+<g id="bardak">
+  <path d="M-80 0 L80 0 L64 250 Q63 262 50 262 L-50 262 Q-63 262 -64 250 Z" fill="url(#su)"/>
+  <path d="M-80 0 L80 0 L64 250 Q63 262 50 262 L-50 262 Q-63 262 -64 250 Z" fill="url(#cam)"/>
+  <path d="M-80 0 L80 0 L64 250 Q63 262 50 262 L-50 262 Q-63 262 -64 250 Z" fill="none" stroke="#9fd2f0" stroke-width="3"/>
+  <path d="M-58 30 L-48 230" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".6"/>
+  <ellipse cx="0" cy="0" rx="92" ry="18" fill="url(#kapak)"/>
+  <ellipse cx="0" cy="-2" rx="80" ry="12" fill="#fff" opacity=".25"/>
+  <path d="M-30 -2 Q0 -14 30 -2" stroke="#fff" stroke-width="4" fill="none" opacity=".6"/>
+  <circle cx="0" cy="130" r="30" fill="#fff" opacity=".85"/>
+  <path d="M0 108 C12 122 16 132 12 140 C9 146 4 149 0 149 C-4 149 -9 146 -12 140 C-16 132 -12 122 0 108 Z" fill="#0b6fb8"/>
+</g>
+</defs>
+<rect width="1200" height="900" fill="url(#bg)"/>
+<circle cx="250" cy="180" r="260" fill="url(#isik)"/>
+<circle cx="1020" cy="760" r="220" fill="#b9dcf3" opacity=".6"/>
+<circle cx="980" cy="170" r="90" fill="#fff" opacity=".45"/>
+<ellipse cx="600" cy="790" rx="360" ry="34" fill="#0a2b4d" opacity=".25" filter="url(#golge)"/>
+<!-- markasız koli -->
+<path d="M620 300 L900 300 L900 700 L620 700 Z" fill="url(#koli)"/>
+<path d="M620 300 L680 250 L960 250 L900 300 Z" fill="#edd2a8"/>
+<path d="M900 300 L960 250 L960 650 L900 700 Z" fill="#b8874d"/>
+<rect x="620" y="480" width="280" height="26" fill="#b98b52" opacity=".5"/>
+<!-- bardaklar -->
+<use href="#bardak" transform="translate(360 470) scale(1)"/>
+<use href="#bardak" transform="translate(560 500) scale(1.05)"/>
+<use href="#bardak" transform="translate(760 520) scale(0.95)"/>
+</svg>
+</body></html>

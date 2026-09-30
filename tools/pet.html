@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- Markasız pet şişe su illüstrasyonu (1,5 L ve 0,5 L), 1200x900. -->
+<html><body style="margin:0">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8f4fc"/><stop offset="1" stop-color="#cfe6f6"/></linearGradient>
+<radialGradient id="isik" cx=".3" cy=".25" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<linearGradient id="su" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4effd" stop-opacity=".85"/><stop offset="1" stop-color="#6cbdec" stop-opacity=".95"/></linearGradient>
+<linearGradient id="cam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".6"/><stop offset=".25" stop-color="#fff" stop-opacity=".12"/><stop offset=".75" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#fff" stop-opacity=".45"/></linearGradient>
+<linearGradient id="kapak" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0a5ea8"/><stop offset=".5" stop-color="#2b8fd6"/><stop offset="1" stop-color="#0a4d8c"/></linearGradient>
+<linearGradient id="etiket" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e3f1fb"/></linearGradient>
+<filter id="golge" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
+<!-- şişe: 0,0 = boyun üstü, yükseklik ~ 520 (1,5 L) -->
+<symbol id="sise" viewBox="-110 -30 220 560" overflow="visible">
+  <rect x="-26" y="-28" width="52" height="34" rx="6" fill="url(#kapak)"/>
+  <rect x="-30" y="4" width="60" height="8" rx="3" fill="#0a4d8c"/>
+  <path d="M-24 12 L24 12 L28 40 Q95 80 95 150 L95 480 Q95 520 60 522 L-60 522 Q-95 520 -95 480 L-95 150 Q-95 80 -28 40 Z" fill="url(#su)"/>
+  <path d="M-24 12 L24 12 L28 40 Q95 80 95 150 L95 480 Q95 520 60 522 L-60 522 Q-95 520 -95 480 L-95 150 Q-95 80 -28 40 Z" fill="url(#cam)" stroke="#a9d6f2" stroke-width="3"/>
+  <path d="M-95 200 Q0 212 95 200 M-95 420 Q0 432 95 420" stroke="#fff" stroke-width="5" fill="none" opacity=".5"/>
+  <rect x="-95" y="250" width="190" height="130" fill="url(#etiket)" opacity=".96"/>
+  <rect x="-95" y="250" width="190" height="10" fill="#0b6fb8"/><rect x="-95" y="370" width="190" height="10" fill="#0b6fb8"/>
+  <path d="M0 282 C16 300 22 314 17 325 C13 333 6 337 0 337 C-6 337 -13 333 -17 325 C-22 314 -16 300 0 282 Z" fill="#0b6fb8"/>
+  <path d="M-70 160 L-66 470" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".5"/>
+</symbol>
+</defs>
+<rect width="1200" height="900" fill="url(#bg)"/>
+<circle cx="250" cy="180" r="260" fill="url(#isik)"/>
+<circle cx="1020" cy="760" r="220" fill="#b9dcf3" opacity=".6"/>
+<circle cx="980" cy="170" r="90" fill="#fff" opacity=".45"/>
+<ellipse cx="600" cy="790" rx="330" ry="32" fill="#0a2b4d" opacity=".25" filter="url(#golge)"/>
+<g id="karisik">
+<!-- 1,5 L büyük şişe -->
+<use href="#sise" x="400" y="170" width="220" height="610"/>
+<!-- 0,5 L küçük şişeler -->
+<use href="#sise" x="600" y="440" width="140" height="350"/>
+<use href="#sise" x="720" y="455" width="130" height="335"/>
+<text x="510" y="840" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="800" font-size="36" fill="#0a3d6b">1,5 L</text>
+<text x="735" y="840" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="800" font-size="36" fill="#0a3d6b">0,5 L</text>
+</g>
+<!-- #bir-bucuk: yalnızca 1,5 L şişeler -->
+<g id="birbucuk" style="display:none">
+<use href="#sise" x="290" y="200" width="210" height="580"/>
+<use href="#sise" x="495" y="170" width="220" height="610"/>
+<use href="#sise" x="710" y="200" width="210" height="580"/>
+<text x="605" y="840" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="800" font-size="38" fill="#0a3d6b">1,5 L</text>
+</g>
+<script>if (location.hash === "#bir-bucuk") { document.getElementById("karisik").style.display = "none"; document.getElementById("birbucuk").style.display = ""; }</script>
+</svg>
+</body></html>

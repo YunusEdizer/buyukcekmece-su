@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- Mayadağ damacana etiketi: işletmenin afişindeki etiket düzeni (MAYADAĞ / DOĞAL KAYNAK SUYU / dağ şeridi).
+     tools/etiket.py bu sayfanın 1720x880 ekran görüntüsünü alıp kahraman fotoğrafındaki damacanaya yerleştirir. -->
+<html><head><meta charset="utf-8"><style>
+@font-face { font-family: J; font-weight: 400 800; src: url(../public/font/plus-jakarta-sans-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1E00-1EFF; }
+@font-face { font-family: J; font-weight: 400 800; src: url(../public/font/plus-jakarta-sans-latin.woff2) format('woff2'); }
+html, body { margin: 0; background: transparent; }
+</style></head><body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="880" viewBox="0 0 1720 880">
+  <defs>
+    <linearGradient id="zemin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#edf4fa"/></linearGradient>
+    <linearGradient id="gok" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaf3fb"/><stop offset="1" stop-color="#bcd8ee"/></linearGradient>
+    <linearGradient id="dag1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b8fc9"/><stop offset="1" stop-color="#244f8f"/></linearGradient>
+    <linearGradient id="dag2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d5fa3"/><stop offset="1" stop-color="#132f63"/></linearGradient>
+    <linearGradient id="kar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dbe9f6"/></linearGradient>
+    <clipPath id="kutu"><rect x="0" y="0" width="1720" height="880" rx="26"/></clipPath>
+  </defs>
+  <g clip-path="url(#kutu)">
+    <rect width="1720" height="880" fill="url(#zemin)"/>
+    <!-- dağ şeridi -->
+    <rect y="560" width="1720" height="320" fill="url(#gok)"/>
+    <path d="M0 800 L180 690 L300 735 L470 610 L610 700 L760 640 L900 720 L1080 600 L1240 700 L1400 640 L1560 720 L1720 660 V880 H0Z" fill="url(#dag1)"/>
+    <path d="M470 610 L525 650 L500 655 L470 640 L445 660 L425 648Z M1080 600 L1140 645 L1110 650 L1080 632 L1050 655 L1030 640Z M760 640 L800 668 L775 670 L760 660 L740 672Z" fill="url(#kar)"/>
+    <path d="M0 880 V770 L140 720 L260 770 L420 680 L560 760 L700 700 L860 780 L1000 690 L1160 770 L1300 710 L1460 780 L1600 730 L1720 770 V880Z" fill="url(#dag2)"/>
+    <path d="M420 680 L480 720 L452 724 L420 706 L392 728 L372 714Z M1000 690 L1060 728 L1030 732 L1000 715 L972 736 L952 722Z M700 700 L745 728 L720 730 L700 719 L680 732Z M1300 710 L1345 738 L1320 740 L1300 729 L1280 742Z" fill="url(#kar)" opacity=".92"/>
+    <!-- yazılar -->
+    <text x="860" y="330" text-anchor="middle" font-family="J" font-weight="800" font-size="236" letter-spacing="14" fill="#1b2f5e">MAYADAĞ</text>
+    <line x1="250" y1="440" x2="420" y2="440" stroke="#1b2f5e" stroke-width="8" stroke-linecap="round"/>
+    <line x1="1300" y1="440" x2="1470" y2="440" stroke="#1b2f5e" stroke-width="8" stroke-linecap="round"/>
+    <text x="860" y="462" text-anchor="middle" font-family="J" font-weight="700" font-size="70" letter-spacing="7" fill="#1b2f5e">DOĞAL KAYNAK SUYU</text>
+  </g>
+</svg>
+</body></html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- Tüp çeşidi illüstrasyonları (markasız). Adresin sonuna #forklift, #palmiye veya #ticari eklenerek 1200x900 çekilir. -->
+<html><body style="margin:0">
+<svg id="s" xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8f4fc"/><stop offset="1" stop-color="#cfe6f6"/></linearGradient>
+<radialGradient id="isik" cx=".3" cy=".25" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<linearGradient id="govdeY" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0a4d8c"/><stop offset=".22" stop-color="#1673c2"/><stop offset=".42" stop-color="#4fa6e6"/><stop offset=".55" stop-color="#1f7fcf"/><stop offset="1" stop-color="#0a3f75"/></linearGradient>
+<linearGradient id="govdeD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a4d8c"/><stop offset=".22" stop-color="#1673c2"/><stop offset=".42" stop-color="#4fa6e6"/><stop offset=".55" stop-color="#1f7fcf"/><stop offset="1" stop-color="#0a3f75"/></linearGradient>
+<linearGradient id="celik" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7d8b99"/><stop offset=".35" stop-color="#e6edf3"/><stop offset=".6" stop-color="#aab7c3"/><stop offset="1" stop-color="#5f6d7a"/></linearGradient>
+<linearGradient id="celikD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8b99"/><stop offset=".35" stop-color="#e6edf3"/><stop offset=".6" stop-color="#aab7c3"/><stop offset="1" stop-color="#5f6d7a"/></linearGradient>
+<linearGradient id="alev" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#f57c1f"/><stop offset=".55" stop-color="#ffb347"/><stop offset="1" stop-color="#ffe29a"/></linearGradient>
+<radialGradient id="sicak" cx=".5" cy=".3" r=".6"><stop offset="0" stop-color="#ffb347" stop-opacity=".55"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/></radialGradient>
+<filter id="golge" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#bg)"/>
+<circle cx="250" cy="180" r="260" fill="url(#isik)"/>
+<circle cx="1020" cy="760" r="220" fill="#b9dcf3" opacity=".6"/>
+<circle cx="980" cy="170" r="90" fill="#fff" opacity=".45"/>
+<g id="icerik"></g>
+</svg>
+<script>
+const cizimler = {
+  // Yatık forklift tüpü, bağlantı kelepçeleriyle
+  forklift: `
+    <ellipse cx="600" cy="740" rx="330" ry="34" fill="#0a2b4d" opacity=".26" filter="url(#golge)"/>
+    <rect x="300" y="430" width="600" height="260" rx="130" fill="url(#govdeD)"/>
+    <rect x="410" y="430" width="22" height="260" fill="#083866" opacity=".5"/>
+    <rect x="768" y="430" width="22" height="260" fill="#083866" opacity=".5"/>
+    <path d="M340 470 Q600 450 860 470" stroke="#fff" stroke-width="22" stroke-linecap="round" fill="none" opacity=".22"/>
+    <rect x="380" y="690" width="60" height="50" rx="8" fill="url(#celik)"/><rect x="760" y="690" width="60" height="50" rx="8" fill="url(#celik)"/>
+    <rect x="340" y="734" width="520" height="22" rx="8" fill="#556270"/>
+    <rect x="880" y="520" width="70" height="80" rx="12" fill="url(#celikD)"/>
+    <rect x="945" y="535" width="40" height="50" rx="8" fill="#3d4a57"/>
+    <circle cx="600" cy="560" r="70" fill="#fff" opacity=".95"/>
+    <path d="M572 598 L572 528 L590 528 L590 582 L628 582 L628 598 Z" fill="#0b6fb8"/>`,
+  // Palmiye tipi açık hava ısıtıcısı
+  palmiye: `
+    <ellipse cx="600" cy="815" rx="190" ry="26" fill="#0a2b4d" opacity=".26" filter="url(#golge)"/>
+    <ellipse cx="600" cy="300" rx="360" ry="220" fill="url(#sicak)"/>
+    <path d="M400 190 Q600 120 800 190 L760 215 Q600 165 440 215 Z" fill="url(#celik)"/>
+    <rect x="585" y="205" width="30" height="40" fill="#5f6d7a"/>
+    <rect x="555" y="240" width="90" height="120" rx="14" fill="#2a3440"/>
+    <rect x="570" y="255" width="60" height="90" rx="8" fill="url(#alev)"/>
+    <rect x="588" y="360" width="24" height="270" fill="url(#celik)"/>
+    <rect x="505" y="610" width="190" height="200" rx="18" fill="url(#govdeY)"/>
+    <rect x="505" y="650" width="190" height="10" fill="#083866" opacity=".5"/>
+    <rect x="485" y="795" width="230" height="26" rx="10" fill="url(#celik)"/>
+    <path d="M520 150 Q530 120 520 95 M600 140 Q612 105 600 75 M680 150 Q690 120 680 95" stroke="#f5a524" stroke-width="8" stroke-linecap="round" fill="none" opacity=".55"/>`,
+  // 24 kg ticari ve 45 kg sanayi tüpü yan yana
+  ticari: `
+    <ellipse cx="600" cy="800" rx="330" ry="34" fill="#0a2b4d" opacity=".26" filter="url(#golge)"/>
+    <g transform="translate(-150 60)">
+      <path d="M520 250 Q520 200 600 200 Q680 200 680 250 L680 280 L650 280 L650 250 Q650 232 600 232 Q550 232 550 250 L550 280 L520 280 Z" fill="url(#celik)"/>
+      <rect x="580" y="212" width="40" height="42" rx="8" fill="#3d4a57"/>
+      <rect x="470" y="270" width="260" height="450" rx="80" fill="url(#govdeY)"/>
+      <rect x="470" y="380" width="260" height="12" fill="#083866" opacity=".5"/><rect x="470" y="600" width="260" height="12" fill="#083866" opacity=".5"/>
+      <rect x="490" y="705" width="220" height="30" rx="10" fill="url(#celik)"/>
+      <text x="600" y="520" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="800" font-size="64" fill="#fff">24</text>
+      <text x="600" y="565" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="700" font-size="30" fill="#d7ecf9">kg</text>
+    </g>
+    <g transform="translate(170 0)">
+      <path d="M520 190 Q520 140 600 140 Q680 140 680 190 L680 220 L650 220 L650 190 Q650 172 600 172 Q550 172 550 190 L550 220 L520 220 Z" fill="url(#celik)"/>
+      <rect x="580" y="152" width="40" height="42" rx="8" fill="#3d4a57"/>
+      <rect x="460" y="210" width="280" height="570" rx="85" fill="url(#govdeY)"/>
+      <rect x="460" y="340" width="280" height="12" fill="#083866" opacity=".5"/><rect x="460" y="640" width="280" height="12" fill="#083866" opacity=".5"/>
+      <rect x="480" y="765" width="240" height="30" rx="10" fill="url(#celik)"/>
+      <text x="600" y="520" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="800" font-size="72" fill="#fff">45</text>
+      <text x="600" y="568" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="700" font-size="32" fill="#d7ecf9">kg</text>
+    </g>`,
+};
+document.getElementById("icerik").innerHTML = cizimler[location.hash.slice(1)] || "";
+</script>
+</body></html>

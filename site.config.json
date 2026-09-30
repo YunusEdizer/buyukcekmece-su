@@ -1,0 +1,42 @@
+{
+  "alanAdi": "https://www.buyukcekmecesusiparisi.com.tr",
+  "marka": "Bayramoğlu Su Bayisi",
+  "markaKisa": "Bayramoğlu Su",
+  "kaynakSu": "Mayadağ Doğal Kaynak Suyu",
+  "kurulusYili": 2000,
+  "tecrubeYil": 25,
+  "aboneSayisi": "2.800+",
+  "telefon": "+905427870848",
+  "telefonGorunen": "0542 787 08 48",
+  "whatsapp": "905427870848",
+  "ikinciTelefon": "+905333950139",
+  "ikinciTelefonGorunen": "0533 395 01 39",
+  "sabitTelefon": "+902128855787",
+  "sabitTelefonGorunen": "0212 885 57 87",
+  "kumburgazSabitTelefon": "+902128843900",
+  "kumburgazSabitTelefonGorunen": "0212 884 39 00",
+  "resmiUnvan": "Bayramoğlu Ticaret",
+  "eposta": "info@buyukcekmecesusiparisi.com.tr",
+  "adres": {
+    "sokak": "Uludere Sk. No:6A/2",
+    "mahalle": "Celaliye",
+    "ilce": "Büyükçekmece",
+    "il": "İstanbul",
+    "postaKodu": "34584"
+  },
+  "konum": { "lat": 41.0515442, "lng": 28.4174581 },
+  "googleHaritaLinki": "https://maps.app.goo.gl/PK41bXC8frdsS8op8",
+  "googlePuan": "5,0",
+  "googleYorumSayisi": 5,
+  "instagram": "https://www.instagram.com/celaliyesubayisi/",
+  "calismaSaatleri": null,
+  "googleDogrulama": "",
+  "ga4": "",
+  "urunFiyatlari": {
+    "damacana": null,
+    "pompa": null,
+    "bardak": null,
+    "pet": null,
+    "tup": null
+  }
+}
